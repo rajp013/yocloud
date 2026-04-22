@@ -1,76 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YoCloud Security | Research & Labs</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            background: radial-gradient(circle at center, #0f172a 0%, #020617 100%);
-            color: #f8fafc;
-        }
-        .cyber-border {
-            clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
-            border-left: 4px solid #22d3ee;
-        }
-        .glow-text {
-            text-shadow: 0 0 15px rgba(34, 211, 238, 0.5);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yocloud Security</title>
+
+  <style>
+    body {
+      margin: 0;
+      /* Using a slightly deeper navy for a more premium feel */
+      background: #020617; 
+      color: white;
+      font-family: 'ui-monospace', 'Cascadia Code', 'Source Code Pro', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 8vw, 48px); /* Responsive sizing */
+      margin-bottom: 10px;
+      letter-spacing: -1px;
+      /* Adding a soft cyan glow to make the brand "pop" */
+      text-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+    }
+
+    p {
+      color: #64748b;
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Terminal-style blinking cursor */
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1.2em;
+      background: #22d3ee;
+      margin-left: 5px;
+      vertical-align: middle;
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
 </head>
-<body class="flex items-center justify-center min-h-screen p-6">
 
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-cyan-900/20 blur-[120px] rounded-full"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-900/20 blur-[120px] rounded-full"></div>
-    </div>
+<body>
 
-    <main class="relative z-10 max-w-2xl w-full">
-        <header class="mb-12 text-center md:text-left">
-            <h1 class="text-5xl md:text-7xl font-black tracking-tighter glow-text italic uppercase">
-                YoCloud<span class="text-cyan-400 font-light text-3xl md:text-5xl not-italic ml-2">SECURITY</span>
-            </h1>
-            <div class="h-1 w-24 bg-cyan-400 mt-2 mx-auto md:mx-0"></div>
-        </header>
-
-        <div class="bg-slate-900/60 backdrop-blur-md border border-slate-800 cyber-border p-8 shadow-2xl">
-            <div class="flex flex-col md:flex-row justify-between items-start gap-8">
-                
-                <div class="flex-1">
-                    <h2 class="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-2">Internal Status</h2>
-                    <p class="text-xl font-medium text-slate-200 mb-4">Building the future of offensive security research and digital defense.</p>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        A centralized hub for technical write-ups, vulnerability disclosures, and security automation.
-                    </p>
-                </div>
-
-                <div class="w-full md:w-48 bg-slate-950 border border-slate-800 p-4 rounded-sm">
-                    <h3 class="text-xs font-bold text-slate-500 uppercase mb-3">Target Modules</h3>
-                    <ul class="space-y-2 text-[10px] font-mono text-cyan-300">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>VAPT LABS</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-slate-700 rounded-full mr-2"></span>RED TEAM OPS</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-slate-700 rounded-full mr-2"></span>EXPLOIT DEV</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="mt-10">
-                <div class="flex justify-between text-[10px] font-mono mb-1 text-slate-500">
-                    <span>SYSTEM_READY_LEVEL</span>
-                    <span>75%</span>
-                </div>
-                <div class="w-full h-1 bg-slate-800">
-                    <div class="h-full bg-cyan-500 shadow-[0_0_10px_#22d3ee]" style="width: 75%"></div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="mt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-[10px] font-mono tracking-widest uppercase">
-            <div>Root Domain: <span class="text-slate-300">yocloud.in</span></div>
-            <div class="mt-4 md:mt-0">© 2026 // Establish Persistence</div>
-        </footer>
-    </main>
+  <div class="container">
+    <h1>Yocloud Security</h1>
+    <p>Initializing Labs<span class="cursor"></span></p>
+  </div>
 
 </body>
 </html>
