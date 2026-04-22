@@ -3,55 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YoCloud Security | Coming Soon</title>
+    <title>YoCloud Security | Research & Labs</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            background-color: #0a0a0a;
-            color: #00ff41; /* Classic Terminal Green */
-            font-family: 'Courier New', Courier, monospace;
+            background: radial-gradient(circle at center, #0f172a 0%, #020617 100%);
+            color: #f8fafc;
         }
-        .glow {
-            text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;
+        .cyber-border {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
+            border-left: 4px solid #22d3ee;
+        }
+        .glow-text {
+            text-shadow: 0 0 15px rgba(34, 211, 238, 0.5);
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen m-0 overflow-hidden">
+<body class="flex items-center justify-center min-h-screen p-6">
 
-    <div class="absolute inset-0 z-0 opacity-10" 
-         style="background-image: radial-gradient(#00ff41 1px, transparent 1px); background-size: 30px 30px;">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-cyan-900/20 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-900/20 blur-[120px] rounded-full"></div>
     </div>
 
-    <main class="relative z-10 text-center px-4">
-        <div class="mb-6 inline-block p-3 border-2 border-[#00ff41] rounded-lg">
-            <h1 class="text-4xl md:text-6xl font-bold tracking-tighter glow uppercase">
-                YoCloud Security
+    <main class="relative z-10 max-w-2xl w-full">
+        <header class="mb-12 text-center md:text-left">
+            <h1 class="text-5xl md:text-7xl font-black tracking-tighter glow-text italic uppercase">
+                YoCloud<span class="text-cyan-400 font-light text-3xl md:text-5xl not-italic ml-2">SECURITY</span>
             </h1>
-        </div>
-        
-        <p class="text-xl md:text-2xl mb-8 text-gray-400">
-            [ <span class="text-white">STATUS:</span> INITIALIZING_LABS... ]
-        </p>
+            <div class="h-1 w-24 bg-cyan-400 mt-2 mx-auto md:mx-0"></div>
+        </header>
 
-        <div class="max-w-md mx-auto bg-zinc-900 border border-zinc-800 p-6 rounded-md shadow-2xl">
-            <h2 class="text-lg font-semibold text-white mb-4">Vulnerability Research & Learning Hub</h2>
-            <p class="text-sm text-gray-500 leading-relaxed">
-                A dedicated space for cybersecurity posts, CTF walkthroughs, and defensive/offensive practice environments. 
-            </p>
-            
-            <div class="mt-8 pt-6 border-t border-zinc-800">
-                <div class="flex items-center justify-center space-x-2">
-                    <span class="relative flex h-3 w-3">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-                    </span>
-                    <span class="text-xs uppercase tracking-widest text-gray-400 font-bold">Deployment in Progress</span>
+        <div class="bg-slate-900/60 backdrop-blur-md border border-slate-800 cyber-border p-8 shadow-2xl">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+                
+                <div class="flex-1">
+                    <h2 class="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-2">Internal Status</h2>
+                    <p class="text-xl font-medium text-slate-200 mb-4">Building the future of offensive security research and digital defense.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        A centralized hub for technical write-ups, vulnerability disclosures, and security automation.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-48 bg-slate-950 border border-slate-800 p-4 rounded-sm">
+                    <h3 class="text-xs font-bold text-slate-500 uppercase mb-3">Target Modules</h3>
+                    <ul class="space-y-2 text-[10px] font-mono text-cyan-300">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>VAPT LABS</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-slate-700 rounded-full mr-2"></span>RED TEAM OPS</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-slate-700 rounded-full mr-2"></span>EXPLOIT DEV</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="flex justify-between text-[10px] font-mono mb-1 text-slate-500">
+                    <span>SYSTEM_READY_LEVEL</span>
+                    <span>75%</span>
+                </div>
+                <div class="w-full h-1 bg-slate-800">
+                    <div class="h-full bg-cyan-500 shadow-[0_0_10px_#22d3ee]" style="width: 75%"></div>
                 </div>
             </div>
         </div>
 
-        <footer class="mt-12 text-zinc-600 text-xs uppercase tracking-widest">
-            &copy; 2026 yocloud.in // Secure your perimeter.
+        <footer class="mt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-[10px] font-mono tracking-widest uppercase">
+            <div>Root Domain: <span class="text-slate-300">yocloud.in</span></div>
+            <div class="mt-4 md:mt-0">© 2026 // Establish Persistence</div>
         </footer>
     </main>
 
